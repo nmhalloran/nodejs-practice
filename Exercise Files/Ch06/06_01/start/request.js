@@ -14,16 +14,16 @@ let req = https.request(options, function(res) {
   console.log("Response from server started.");
 
   console.log(`Server Status: ${res.statusCode} `);
-  console.log("Resonse Headers: %j", res.headers);
+  console.log("Resonse Headers: %j \n", res.headers);
 
   res.setEncoding("UTF-8");
 
   res.once("data", function(chunk) {
-    console.log(chunk);
+    console.log(" CHUNK!!!!  ", chunk, " CHUNK!!!!");
   });
 
   res.on("data", function(chunk) {
-    console.log(`--chnunk--${chunk.length}`);
+    console.log(`--chunk--${chunk.length}`);
     responseBody += chunk;
   });
 
