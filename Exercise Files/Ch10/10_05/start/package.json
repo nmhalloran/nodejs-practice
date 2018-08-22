@@ -17,9 +17,7 @@
   "devDependencies": {
     "chai": "^3.4.0",
     "nock": "^2.18.2",
-    "rewire": "^2.5.2"
-  },
-  "dependencies": {
+    "rewire": "^2.5.2",
     "sinon": "^6.1.5"
   }
 }
