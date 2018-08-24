@@ -1,16 +1,18 @@
 @main-font: Arial, sans-serif;
 @secondary-font: Verdana, sans-serif;
 @fancy-font: fantasy, sans-serif;
-@main-color: navy;
-@secondary-color: darkslateblue;
+@main-color: red;
+@secondary-color: red;
 @contrast-color: yellow;
-@alert-color: red;
+@alert-color: blue;
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-body, h1 {
+body,
+h1 {
   margin: 0;
   font-family: @main-font;
 }
@@ -43,7 +45,6 @@ body {
         color: @alert-color;
         display: block;
       }
-
     }
 
     dt {
@@ -62,7 +63,6 @@ body {
       margin: 0 0 10px 55px;
       font-size: 1em;
     }
-
   }
 
   form {
@@ -73,9 +73,10 @@ body {
     display: flex;
     justify-content: space-around;
 
-    input, button {
+    input,
+    button {
       margin: 0 1em;
-      padding: .5em;
+      padding: 0.5em;
     }
 
     input {
@@ -98,8 +99,5 @@ body {
         color: @contrast-color;
       }
     }
-
   }
-
 }
-
